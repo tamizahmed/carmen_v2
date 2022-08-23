@@ -1,0 +1,11 @@
+<div class="columns is-multiline is-mobile" id="grid-container">
+  <% cities.each do |city| %>
+    <div class="column is-6-mobile is-4-tablet is-3-desktop">
+      <%= link_to city_path(city) do %>
+        <div class="grid-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(<%= city.image_url %>);">
+          <span class="header"><%= city.name %></span>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
