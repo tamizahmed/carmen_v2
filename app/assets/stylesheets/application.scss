@@ -15,6 +15,7 @@
  */
 @import "bulma";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -30,7 +31,23 @@ body {
 }
 
 #grid-container {
-  padding: 2rem;
+  max-width: 1750px;
+  margin: auto;
+  padding: 1rem;
+}
+
+#filters-level {
+
+  .level-item {
+    margin-right: 2rem;
+  }
+
+}
+
+.primary-button {
+  background-color: white;
+  color: #00695c;
+  border: #00695c 1px solid;
 }
 
 .grid-item {
@@ -40,14 +57,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
 
-  .header {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: white;
-    font-weight: 500;
-    font-size: 1.25rem;
-    padding: .75rem;
-  }
+#city-name {
+  color: black;
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
+#country-name {
+  color: slategrey;
+  font-weight: 400;
+  font-size: .85rem;
 }

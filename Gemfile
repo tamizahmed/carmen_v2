@@ -56,3 +56,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #TA add-ons
 gem "bulma-rails", "~> 0.9.2" #front end framework
 gem 'friendly_id', '~> 5.4.0' #slugs
+gem 'acts-as-taggable-on', '~> 9.0' #tags
